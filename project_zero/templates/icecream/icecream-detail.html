@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
+        <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+        <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    </head>
+    <body>
+        <h1>РОБИНСБАСКИН</h1>
+        <h2>{{ name }} </h2>
+        <p> {{ desc }} </p>
+        <img src="{{ avatar }}">
+        <br>
+        <a href='../'>К списку мороженного</a>
+        <br>
+        <a href="/">На главную</a>
+    </body> 
+</html>

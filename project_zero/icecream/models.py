@@ -14,7 +14,7 @@ icecream_db = [
     {
         'name':'45копеек',
         'desc':'Шокаладка, вафля ',
-        'aatar':'https://irkmarket.ru/images/virtuemart/product/resized/078206_0x160.jpg',
+        'avatar':'https://static.regmarkets.ru/listpreview/images2/b7/b7/b7b74f6ebaae0ff70cd63c5371bbc948.jpeg',
     },
     {
         'name':'Фруктовое',

@@ -9,3 +9,13 @@ def icecream_list(request):
     context = {'icecream':icecream}
     return render(request, 'icecream/icecream-list.html', context)
 
+def icecream_detail(request, pk):
+    name = icecream_db[pk]['name']
+    avatar = icecream_db[pk]['avatar']
+    desc = icecream_db[pk]['desc']
+    context = {
+        'name':name,
+        'avatar':avatar,
+        'desc':desc,
+    }
+    return render(request, 'icecream/icecream-detail.html', context)
