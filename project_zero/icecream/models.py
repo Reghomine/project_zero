@@ -5,31 +5,37 @@ icecream_db = [
         'name':'Коровка из кореновки',
         'desc':'Шокаладка, вафелька Вауся , персик',
         'avatar':'https://shop.korenovka.ru/d/1_2.jpg',
+        'rad': 4,
     },
     {
         'name':'Максибон',
         'desc':'Шокаладка, бисквит ',
-        'avatar':'https://lenta-delivery.ru/upload/resize_cache/iblock/787/140_97_1/787bb4e42a9c70190242dd11385b4afd.jpg',
+        'avatar':'https://shop.korenovka.ru/thumb/2/7zkWC6WzJWACc5XFf1khvg/800r800/d/mulyaz_stakan-3d-beliy_0.jpg',
+        'rad': 5,
     },
     {
         'name':'45копеек',
         'desc':'Шокаладка, вафля ',
-        'avatar':'https://static.regmarkets.ru/listpreview/images2/b7/b7/b7b74f6ebaae0ff70cd63c5371bbc948.jpeg',
+        'avatar':'https://shop.korenovka.ru/thumb/2/9lXdj_ohqp3y80FiY-xIGw/800r800/d/3_2.jpg',
+        'rad': 1,
     },
     {
         'name':'Фруктовое',
         'desc':'Клубника, яблоко,  вода ',
-        'avatar':'https://i.ytimg.com/vi/H7FZbQxYADU/hqdefault.jpg',
+        'avatar':'https://shop.korenovka.ru/thumb/2/fhfQ_dUklElGwYv9lGvtMA/800r800/d/2_1.jpg',
+        'rad': 2,
     },
     {
         'name':'Мороженое из мака',
         'desc':'Куча всякого заменителя  ',
-        'avatar':'https://makdonaldsmenu.ru/wp-content/uploads/2017/08/06-1.jpg',
+        'avatar':'https://shop.korenovka.ru/thumb/2/esDfmWyAYB409GOZe-vg5Q/800r800/d/4_1.jpg',
+        'rad': 4,
     },
     {
         'name':'Ноу нейм марка',
         'desc':'"Не понятный мелкий шрифт"  ',
-        'avatar':'https://www.mostinside.com/wp-content/uploads/2017/07/Best-Brands-of-Ice-Cream-in-India-300x169.png',
+        'avatar':'https://shop.korenovka.ru/thumb/2/8NiwjNuG4Z-OeDUEh2jIgg/800r800/d/eskimo_v_shokoladnoy_glazuri_korenovka.jpg',
+        'rad': 0,
     },
     
 ]

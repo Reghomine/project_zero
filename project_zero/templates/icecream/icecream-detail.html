@@ -6,15 +6,54 @@
         <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
         <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
         <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+        <style >
+            .rating{
+                width: 265px;
+                margin: 0 auto;
+            }
+            .rating span{
+                padding: 0;
+                font-size: 32px;
+                margin: 0 3px;
+                line-height: 1;
+                color: lightgrey;
+                text-shadow: 1px 1px;
+            }
+            .rating > span::before {content: '★';}
+            .rating > span.active {
+                color:gold;
+                text-shadow: 1px 1px #c60;
+            }
+        </style>
     </head>
     <body>
-        <h1>РОБИНСБАСКИН</h1>
-        <h2>{{ name }} </h2>
-        <p> {{ desc }} </p>
-        <img src="{{ avatar }}">
-        <br>
-        <a href='../'>К списку мороженного</a>
-        <br>
-        <a href="/">На главную</a>
+        <div class="container"> 
+            <h1>РОБИНСБАСКИН</h1>
+            <h2>{{ name }} </h2>
+            <div class="d-flex">
+                <img class="m-2 img-thumbnail" src="{{ avatar }}">            
+                
+                <div class="card m-2"> 
+                    <p> {{ desc }} </p>
+                    <div class="rating">
+                        {% for i in range %}
+                            <span class="active"></span>
+                        {% endfor %} 
+                        {% for i in zero_range %}
+                            <span></span> 
+                        {% endfor %} 
+                    </div> 
+                    <a href="#" class="btn btn-primary">кУпИтЬ</a>
+                </div>
+            </div>
+            <br>
+            <div class="alert alert-info">
+                <a href='../'>К списку мороженного</a>
+            </div>
+            <br>
+            <div class="alert alert-primary">
+                <a href="/">На главную</a>
+            </div>
+        </div>
     </body> 
 </html>

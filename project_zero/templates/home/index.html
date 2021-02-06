@@ -8,8 +8,15 @@
     <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
   </head>
   <body>
-    <h1>РОБИНСБАСКИН</h1>
-    <img src="https://www.xn--80ahciglbiklic9aa.xn--p1ai/thumb/2/URdqSpYrvIXJKuAs1lHr_g/230c230/d/baskin_robbins.jpg">
-    <a href="/icecream/" style="font-size: 30px;">К списку мороженого</a>
+    <div class="container"> 
+      <h1>РОБИНСБАСКИН</h1>
+    <div class="spinner-border" role="status">
+      <span style="display: none ;">Loading...</span>
+    </div>
+      <img src="https://www.xn--80ahciglbiklic9aa.xn--p1ai/thumb/2/URdqSpYrvIXJKuAs1lHr_g/230c230/d/baskin_robbins.jpg">
+      <div class="alert alert-danger">
+        <a href="/icecream/" style="font-size: 30px;">К списку мороженого</a>
+      </div>
+    </div>
   </body>
 </html>

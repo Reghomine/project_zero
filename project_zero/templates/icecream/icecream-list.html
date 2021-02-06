@@ -8,11 +8,24 @@
         <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
     </head>
     <body>
-        <h1>РОБИНС БАСКИН</h1>
-        <h2>Cписок сортов мороженого</h2>
-        <p>
-            {{ icecream | safe   }}
-        </p>
-        <a href="/">На главную</a>
+        <div class="container"> 
+            <h1>РОБИНС БАСКИН</h1>
+            <h2>Cписок сортов мороженого</h2>
+            <div class="d-flex flex-wrap">
+                {% for i in icecream %}
+                <div class="card p-2 m-3" style="width: 18rem ;"> 
+                    <img src="{{ i.avatar }}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ i.name }} </h5>
+                        <p class="card-text"> {{ i.desc }} </p>
+                        <a href='{{ i.index }}' class="btn btn-primary"> Подробнее </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="alert alert-primary">
+                <a href="/">На главную</a>
+            </div>
+        </div>
     </body>
 </html>
