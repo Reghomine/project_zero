@@ -14,11 +14,14 @@
             <div class="d-flex flex-wrap">
                 {% for i in icecream %}
                 <div class="card p-2 m-3" style="width: 18rem ;"> 
-                    <img src="{{ i.avatar }}" alt="" class="card-img-top">
+                    {% load thumbnail %}
+                    {% thumbnail i.avatar "300x300" upscale=True as im %}
+                        <img src="{{ im.url }}" alt="" class="card-img-top">
+                    {% endthumbnail %}
                     <div class="card-body">
                         <h5 class="card-title">{{ i.name }} </h5>
                         <p class="card-text"> {{ i.desc }} </p>
-                        <a href='{{ i.index }}' class="btn btn-primary"> Подробнее </a>
+                        <a href='{{ i.pk }}' class="btn btn-primary"> Подробнее </a>
                     </div>
                 </div>
                 {% endfor %}

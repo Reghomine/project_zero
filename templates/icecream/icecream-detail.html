@@ -29,12 +29,14 @@
     <body>
         <div class="container"> 
             <h1>РОБИНСБАСКИН</h1>
-            <h2>{{ name }} </h2>
+            <h2>{{ icecream.name }} </h2>
             <div class="d-flex flex-wrap" >
-                <img class="m-2 img-thumbnail" src="{{ avatar }}">            
-                
+                {% load thumbnail %}
+                {% thumbnail icecream.avatar "500x500" upscale=True as im %}
+                    <img class="m-2 img-thumbnail" src="{{ im.url }}">            
+                {% endthumbnail %}
                 <div class="card m-2"> 
-                    <p> {{ desc }} </p>
+                    <p> {{ icecream.desc }} </p>
                     <div class="rating">
                         {% for i in range %}
                             <span class="active"></span>
