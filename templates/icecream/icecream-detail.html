@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF=8">
-        {% load static %}
-        <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
-        <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
-        <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+{% extends "base.html" %}
+{% block title  %} {{ icecream.name }} {% endblock %}
+{% block content %}
         <style >
             .rating{
                 width: 265px;
@@ -25,10 +20,7 @@
                 text-shadow: 1px 1px #c60;
             }
         </style>
-    </head>
-    <body>
-        <div class="container"> 
-            <h1>РОБИНСБАСКИН</h1>
+
             <h2>{{ icecream.name }} </h2>
             <div class="d-flex flex-wrap" >
                 {% load thumbnail %}
@@ -56,6 +48,4 @@
             <div class="alert alert-primary">
                 <a href="/">На главную</a>
             </div>
-        </div>
-    </body> 
-</html>
+{% endblock %}
